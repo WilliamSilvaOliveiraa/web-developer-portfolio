@@ -1,5 +1,12 @@
 .main {
-  background: black;
+  background-image: linear-gradient(
+    to left bottom,
+    #f4f3f2,
+    #f9eae4,
+    #ffe0dc,
+    #ffd6de,
+    #ffcde7
+  );
   box-sizing: border-box;
   width: 100%;
   height: 100vh;
