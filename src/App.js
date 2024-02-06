@@ -8,7 +8,7 @@ function App() {
     <div class="main">
       <div className="navbar">
         <h1 className="">
-          <code>{"<William />"}</code>
+          <code>{"<Silva />"}</code>
         </h1>
 
         <div className="links">
