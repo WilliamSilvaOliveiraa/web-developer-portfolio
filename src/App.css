@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: "Oblivian Text Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Oblivian Text Regular"),
+    url("./fonts/Jörg Schmitt - Oblivian Text.woff") format("woff");
+}
+
+@font-face {
   font-family: "Oblivian Text Black";
   src: local("Jörg Schmitt - Oblivian Text Black"),
     url("./fonts/Jörg Schmitt - Oblivian Text Black.woff") format("woff");
@@ -29,6 +37,23 @@
     url("./fonts/Oceanwide-Semibold.otf") format("otf");
   font-weight: bold;
   font-style: italic;
+}
+
+@font-face {
+  font-family: "Oblivian Text Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Oblivian Text Thin"),
+    url("./fonts/Jörg Schmitt - Oblivian Text Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./fonts/Gilroy-Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("./fonts/Gilroy-Medium.ttf") format("opentype");
 }
 
 .circle {
@@ -205,9 +230,10 @@ code {
 }
 
 .about-me h2 {
-  font-family: "Oblivian Text Normal", sans-serif;
+  font-family: "Gilroy-Medium", sans-serif;
+  word-spacing: 0.2em;
   font-size: 1.6rem;
-  color: #1b1c1ea2;
+  color: #1b1c1e;
 }
 
 .text-img {
@@ -221,7 +247,8 @@ code {
 .text-img p {
   width: 100%;
   height: 100%;
-  font-family: "Oblivian Text Normal", sans-serif;
+  font-family: "Gilroy-Medium", sans-serif;
+  word-spacing: 0.2em;
   font-size: 1rem;
   color: #1b1c1ed0;
   z-index: 10;
@@ -293,8 +320,10 @@ code {
   width: 100%;
   text-align: center;
   margin: 0;
+  color: #1b1c1e;
   font-size: 1.6rem;
-  font-family: "Oblivian Text Normal", sans-serif;
+  font-family: "Gilroy-Medium", sans-serif;
+  word-spacing: 0.2em;
 }
 
 .title-projects h2 {
@@ -303,7 +332,9 @@ code {
   margin: 0;
   font-weight: 500;
   font-size: 1rem;
-  font-family: "Oblivian Text Normal", sans-serif;
+  font-family: "Gilroy-Medium", sans-serif;
+  word-spacing: 0.2em;
+  color: #1b1c1ed0;
 }
 
 .project-container {
@@ -422,4 +453,34 @@ code {
   opacity: 0.3;
   z-index: 1;
   background: linear-gradient(to bottom, #8400ff 10%, #ffffff 20%);
+}
+
+.skill-title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-title h1 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  color: #1b1c1e;
+  font-size: 1.6rem;
+  font-family: "Gilroy-Medium", sans-serif;
+  word-spacing: 0.2em;
+}
+
+.skill-title h2 {
+  width: 80%;
+  text-align: center;
+  margin: 0;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Gilroy-Medium", sans-serif;
+  word-spacing: 0.2em;
+  color: #1b1c1ed0;
 }

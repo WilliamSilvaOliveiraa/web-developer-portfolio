@@ -7,6 +7,7 @@ import { FaReact } from "react-icons/fa";
 import { FaNode } from "react-icons/fa";
 import { SiAdobeillustrator } from "react-icons/si";
 import siteFoto from "./imgs/modelo.png";
+import etec from "./imgs/etec.jpg";
 
 function App() {
   return (
@@ -161,7 +162,28 @@ function App() {
         </div>
       </div>
       <div className="skills">
-        <div className="skill-title"></div>
+        <div className="skill-title">
+          <h1>Habilidades e Certificados</h1>
+          <h2>Conheça minha formação</h2>
+        </div>
+        <div className="skill-containers">
+          <div className="skill-containers-2">
+            <div className="skill-container">
+              <div className="skill-img">
+                <img src={etec}></img>
+              </div>
+              <h2>Desenvolvimento de Sistemas</h2>
+              <p>
+                Formado em Técnico em Desenvolvimentos de Sistemas<br></br>Onde:
+                Etec João Berlamino<br></br>Duração: 3 Anos <br></br> Data: 2021
+                - 2023 <br></br>Conteúdos: Kotlin, PHP 7, React, Laravel, Xamp,
+                MySQL, HeidiSQl, HTML, CSS, Vs, VsCode, C#, C, Arduino.
+              </p>
+              <div></div>
+            </div>
+          </div>
+          <div className="skill-containers-3"></div>
+        </div>
       </div>
       <div className="circle"></div>
       <div className="circle2"></div>
