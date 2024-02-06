@@ -172,6 +172,7 @@ code {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 2vw;
 }
 
 .about-me h2 {
@@ -183,26 +184,38 @@ code {
 .text-img {
   display: flex;
   width: 76%;
+  height: 100%;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
 }
 
 .text-img p {
   width: 100%;
+  height: 100%;
+  font-family: "Oblivian Text Normal", sans-serif;
+  font-size: 1rem;
+  color: #1b1c1ed0;
 }
 
-.img-container {
-  width: 22rem;
+.img-bola {
+  width: 15rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   aspect-ratio: 1;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  border: 1.5rem solid white;
+  border: 1.1rem solid white;
 }
 
-.img-container img {
+.img-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-bola img {
   width: 100%;
   height: 100%;
   object-fit: cover;

@@ -55,7 +55,9 @@ function App() {
             conhecimentos na web, mobile e backend, através de React e Node.
           </p>
           <div className="img-container">
-            <img src={Perfil}></img>
+            <div className="img-bola">
+              <img src={Perfil}></img>
+            </div>
           </div>
         </div>
       </div>
