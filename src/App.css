@@ -1,15 +1,152 @@
+@font-face {
+  font-family: "Oblivian Text Bold";
+  src: local("Jörg Schmitt - Oblivian Text Bold"),
+    url("./fonts/Jörg Schmitt - Oblivian Text Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oblivian Text Black";
+  src: local("Jörg Schmitt - Oblivian Text Black"),
+    url("./fonts/Jörg Schmitt - Oblivian Text Black.woff") format("woff");
+  font-weight: black; /* Ou utilize 'black' se preferir */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oblivian Text Regular Italic";
+  src: local("Jörg Schmitt - Oblivian Text Regular Italic"),
+    url("./fonts/Jörg Schmitt - Oblivian Text Regular Italic.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
 .main {
   background-image: linear-gradient(
-    to left bottom,
-    #f4f3f2,
-    #f9eae4,
-    #ffe0dc,
-    #ffd6de,
-    #ffcde7
+    to right top,
+    #ece1ea,
+    #f2e7ed,
+    #f7edf0,
+    #fbf4f5,
+    #fffafa
   );
   box-sizing: border-box;
   width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10vw;
+  overflow: hidden;
+}
+
+code {
+  font-size: 2.2vw;
+  background-clip: text;
+  color: transparent;
+  background-image: radial-gradient(
+    circle,
+    #fb0b89,
+    #f5006d,
+    #eb0053,
+    #de0039,
+    #cf0c20
+  );
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.texto-logo {
+}
+
+.links {
+  display: flex;
+  gap: 2vw;
+}
+
+.links a {
+  text-decoration: none;
+  color: #1b1c1e;
+  font-family: "Inter", sans-serif;
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.icone-user {
+  align-items: end;
+  color: #1b1c1e;
+  font-size: 1.5vw;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  width: 100vw;
+  align-items: center;
+  margin-top: 6vw;
+}
+
+.title h2 {
+  font-family: "Oblivian Text Bold", sans-serif;
+  color: #1b1c1e;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.title h1 {
+  font-family: "Oblivian Text Black", sans-serif;
+  font-size: 6rem;
+  margin: 0;
+  background-clip: text;
+  color: transparent;
+  background-image: radial-gradient(
+    circle,
+    #fb0b89,
+    #f5006d,
+    #eb0053,
+    #de0039,
+    #cf0c20
+  );
+}
+.title p {
+  font-family: "Oblivian Text Normal", sans-serif;
+  color: #1b1c1ea2;
+  font-size: 0.875rem;
+  margin: 0 32vw;
+  text-align: center;
+}
+
+.link-social {
+  margin-top: 1vw;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.link-social a {
+  border: 1px solid black;
+
+  padding: 0.5% 1.7%;
+  font-family: "Oblivian Text Normal", sans-serif;
+  color: #1b1c1ea2;
+  font-size: 0.875rem;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2vw;
 }
