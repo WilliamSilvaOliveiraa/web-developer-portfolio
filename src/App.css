@@ -309,14 +309,20 @@ code {
 .project-container {
   width: 100%;
   display: flex;
+  position: relative;
   flex-direction: column;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   background: #f3f3ff;
   padding: 8px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+.project-container:hover {
+  transform: scale(1.02);
 }
 
 .project-container img {
@@ -324,22 +330,28 @@ code {
   height: auto;
   margin-bottom: 0.8vw;
   border-radius: 5px;
+  z-index: 2;
 }
 
 .project-container h2 {
+  color: #4d4d53;
   margin: 0;
   width: 100%;
+  z-index: 2;
 }
 .project-container p {
   margin: 0;
+  color: #4d4d53;
   width: 100%;
   margin-bottom: 0.5vw;
+  z-index: 2;
 }
 .card-footer {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .tec-icons {
@@ -348,10 +360,66 @@ code {
 }
 
 .btn-show {
-  border: 1px solid black;
+  border: 1px solid #4d4d53;
   padding: 1% 1.5%;
   width: 7vw;
   text-align: center;
   font-size: 0.875rem;
+  cursor: pointer;
   border-radius: 20px;
+  color: #4d4d53;
+}
+
+.circle4 {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: blur(50px);
+  opacity: 1;
+  z-index: 1;
+  background: linear-gradient(to bottom, #39c0ff 50%, #6f00ff 80%);
+}
+.circle5 {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: blur(50px);
+  opacity: 1;
+  z-index: 1;
+  background: linear-gradient(to bottom, #fa39ad 40%, #fe6c4c 50%);
+}
+
+.circle6 {
+  position: absolute;
+  top: 15%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: blur(50px);
+  opacity: 1;
+  z-index: 1;
+  background: linear-gradient(to bottom, #8400ff 40%, #e3c6ff 50%);
+}
+.circle7 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.3;
+  z-index: 1;
+  background: linear-gradient(to bottom, #8400ff 10%, #ffffff 20%);
 }

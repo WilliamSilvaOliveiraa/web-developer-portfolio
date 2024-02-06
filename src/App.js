@@ -48,9 +48,9 @@ function App() {
         <h2>Sobre mim</h2>
         <div className="text-img">
           <p>
-            Me chamo William Oliveira Silva e eu amo tecnologia e programação.
+            Me chamo William Oliveira Silva e amo tecnologia e programação.
             Quando era mais jovem programei em Java e C#, criando jogos e
-            plugins de minecraft.<br></br>
+            plugins do jogo Minecraft.<br></br>
             <br></br>Em 2021, decidi ingressar em uma carreira de estudos em
             programação, dessa vez focando na web.
             <br></br>
@@ -72,6 +72,10 @@ function App() {
         </div>
         <div className="projects-container-2">
           <div className="project-container">
+            <div className="circle4"></div>
+            <div className="circle5"></div>
+            <div className="circle6"></div>
+            <div className="circle7"></div>
             <img src={siteFoto}></img>
             <h2>EuroGrill</h2>
             <p>Ecommerce e blog local</p>
@@ -85,6 +89,10 @@ function App() {
             </div>
           </div>
           <div className="project-container">
+            <div className="circle4"></div>
+            <div className="circle5"></div>
+            <div className="circle6"></div>
+            <div className="circle7"></div>
             <img src={siteFoto}></img>
             <h2>EuroGrill</h2>
             <p>Ecommerce e blog local</p>
@@ -100,6 +108,10 @@ function App() {
         </div>
         <div className="projects-container-3">
           <div className="project-container">
+            <div className="circle4"></div>
+            <div className="circle5"></div>
+            <div className="circle6"></div>
+            <div className="circle7"></div>
             <img src={siteFoto}></img>
             <h2>EuroGrill</h2>
             <p>Ecommerce e blog local</p>
@@ -113,6 +125,10 @@ function App() {
             </div>
           </div>
           <div className="project-container">
+            <div className="circle4"></div>
+            <div className="circle5"></div>
+            <div className="circle6"></div>
+            <div className="circle7"></div>
             <img src={siteFoto}></img>
             <h2>EuroGrill</h2>
             <p>Ecommerce e blog local</p>
@@ -126,6 +142,10 @@ function App() {
             </div>
           </div>
           <div className="project-container">
+            <div className="circle4"></div>
+            <div className="circle5"></div>
+            <div className="circle6"></div>
+            <div className="circle7"></div>
             <img src={siteFoto}></img>
             <h2>EuroGrill</h2>
             <p>Ecommerce e blog local</p>
@@ -139,6 +159,9 @@ function App() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="skills">
+        <div className="skill-title"></div>
       </div>
       <div className="circle"></div>
       <div className="circle2"></div>
