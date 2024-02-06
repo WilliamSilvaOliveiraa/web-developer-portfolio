@@ -32,6 +32,8 @@
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
   background-image: linear-gradient(
     to right top,
     #ece1ea,
@@ -42,9 +44,12 @@
   );
   box-sizing: border-box;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 0 5% 0;
+  overflow: hidden;
+  gap: 6rem;
+  align-items: center;
 }
 
 .navbar {
@@ -101,8 +106,8 @@ code {
   flex-direction: column;
   gap: 1vw;
   width: 100vw;
+  height: 100%;
   align-items: center;
-  margin-top: 6vw;
 }
 
 .title h2 {
@@ -158,4 +163,48 @@ code {
   justify-content: start;
   gap: 2vw;
   border-radius: 2px;
+}
+
+.about-me {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me h2 {
+  font-family: "Oblivian Text Normal", sans-serif;
+  font-size: 1.6rem;
+  color: #1b1c1ea2;
+}
+
+.text-img {
+  display: flex;
+  width: 76%;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.text-img p {
+  width: 100%;
+}
+
+.img-container {
+  width: 22rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border: 1.5rem solid white;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 60%; /* Substitua esses valores conforme necessário */
 }

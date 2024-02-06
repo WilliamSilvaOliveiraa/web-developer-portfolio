@@ -2,6 +2,7 @@ import "./App.css";
 import { FaRegUser } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import Perfil from "./imgs/Perfil.jpg";
 
 function App() {
   return (
@@ -37,6 +38,25 @@ function App() {
             <FaLinkedin />
             Linkedin
           </a>
+        </div>
+      </div>
+      <div className="about-me">
+        <h2>Sobre mim</h2>
+        <div className="text-img">
+          <p>
+            Me chamo William Oliveira Silva e eu amo tecnologia e programação.
+            Quando era mais jovem programei em Java e C#, criando jogos e
+            plugins de minecraft.<br></br>
+            <br></br>Em 2021, decidi ingressar em uma carreira de estudos em
+            programação, dessa vez focando na web.
+            <br></br>
+            <br></br>Escolhi Javascript devido à sua grande comunidade, grande
+            potencial de crescimento e possibilidade de reutilização de
+            conhecimentos na web, mobile e backend, através de React e Node.
+          </p>
+          <div className="img-container">
+            <img src={Perfil}></img>
+          </div>
         </div>
       </div>
     </div>
