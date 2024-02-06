@@ -3,6 +3,10 @@ import { FaRegUser } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Perfil from "./imgs/Perfil.jpg";
+import { FaReact } from "react-icons/fa";
+import { FaNode } from "react-icons/fa";
+import { SiAdobeillustrator } from "react-icons/si";
+import siteFoto from "./imgs/modelo.png";
 
 function App() {
   return (
@@ -61,6 +65,84 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="projects">
+        <div className="title-projects">
+          <h1>Projetos</h1>
+          <h2>Veja os projetos onde coloquei meu conhecimento em prática</h2>
+        </div>
+        <div className="projects-container-2">
+          <div className="project-container">
+            <img src={siteFoto}></img>
+            <h2>EuroGrill</h2>
+            <p>Ecommerce e blog local</p>
+            <div className="card-footer">
+              <div className="tec-icons">
+                <FaReact />
+                <FaNode />
+                <SiAdobeillustrator />
+              </div>
+              <div className="btn-show">Ver Mais</div>
+            </div>
+          </div>
+          <div className="project-container">
+            <img src={siteFoto}></img>
+            <h2>EuroGrill</h2>
+            <p>Ecommerce e blog local</p>
+            <div className="card-footer">
+              <div className="tec-icons">
+                <FaReact />
+                <FaNode />
+                <SiAdobeillustrator />
+              </div>
+              <div className="btn-show">Ver Mais</div>
+            </div>
+          </div>
+        </div>
+        <div className="projects-container-3">
+          <div className="project-container">
+            <img src={siteFoto}></img>
+            <h2>EuroGrill</h2>
+            <p>Ecommerce e blog local</p>
+            <div className="card-footer">
+              <div className="tec-icons">
+                <FaReact />
+                <FaNode />
+                <SiAdobeillustrator />
+              </div>
+              <div className="btn-show">Ver Mais</div>
+            </div>
+          </div>
+          <div className="project-container">
+            <img src={siteFoto}></img>
+            <h2>EuroGrill</h2>
+            <p>Ecommerce e blog local</p>
+            <div className="card-footer">
+              <div className="tec-icons">
+                <FaReact />
+                <FaNode />
+                <SiAdobeillustrator />
+              </div>
+              <div className="btn-show">Ver Mais</div>
+            </div>
+          </div>
+          <div className="project-container">
+            <img src={siteFoto}></img>
+            <h2>EuroGrill</h2>
+            <p>Ecommerce e blog local</p>
+            <div className="card-footer">
+              <div className="tec-icons">
+                <FaReact />
+                <FaNode />
+                <SiAdobeillustrator />
+              </div>
+              <div className="btn-show">Ver Mais</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="circle"></div>
+      <div className="circle2"></div>
+      <div className="circle3"></div>
     </div>
   );
 }
