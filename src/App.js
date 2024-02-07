@@ -8,6 +8,10 @@ import { FaNode } from "react-icons/fa";
 import { SiAdobeillustrator } from "react-icons/si";
 import siteFoto from "./imgs/modelo.png";
 import etec from "./imgs/etec.jpg";
+import react from "./imgs/react.png";
+import php from "./imgs/php.png";
+import bradesco from "./imgs/bradesco.png";
+import { FaAngleDoubleRight } from "react-icons/fa";
 
 function App() {
   return (
@@ -172,18 +176,91 @@ function App() {
               <div className="skill-img">
                 <img src={etec}></img>
               </div>
-              <h2>Desenvolvimento de Sistemas</h2>
-              <p>
-                Formado em Técnico em Desenvolvimentos de Sistemas<br></br>Onde:
-                Etec João Berlamino<br></br>Duração: 3 Anos <br></br> Data: 2021
-                - 2023 <br></br>Conteúdos: Kotlin, PHP 7, React, Laravel, Xamp,
-                MySQL, HeidiSQl, HTML, CSS, Vs, VsCode, C#, C, Arduino.
-              </p>
-              <div></div>
+              <div className="text-skill">
+                <h2>Desenvolvimento de Sistemas</h2>
+                <p>
+                  Formado em Técnico em Desenvolvimentos de Sistemas<br></br>
+                  Onde: Etec João Berlamino<br></br>Duração: 3 Anos <br></br>{" "}
+                  Data: 2021 - 2023 <br></br>Conteúdos: Kotlin, PHP 7, React,
+                  Laravel, Xamp, MySQL, HeidiSQl, HTML, CSS, Vs, VsCode, C#, C e
+                  Arduino.
+                </p>
+              </div>
+              <div className="certificate">
+                Certificado <FaAngleDoubleRight />
+              </div>
+            </div>
+            <div className="skill-container">
+              <div className="skill-img">
+                <img src={react}></img>
+              </div>
+              <div className="text-skill">
+                <h2>Curso React + Redux Completo</h2>
+                <p>
+                  Conclusão de Curso React + Redux<br></br>Onde: Udemy<br></br>
+                  Duração: 54.5 Horas <br></br> Aulas: 444<br></br>Contéudos:
+                  React Js, Redux, Webpack, Redux-Form, MongoDB, Express e Node.
+                </p>
+              </div>
+              <div className="certificate">
+                Certificado <FaAngleDoubleRight />
+              </div>
             </div>
           </div>
-          <div className="skill-containers-3"></div>
+          <div className="skill-containers-3">
+            <div className="skill-container">
+              <div className="skill-img">
+                <img src={php}></img>
+              </div>
+              <div className="text-skill">
+                <h2>Curso Completo de PHP 7</h2>
+                <p>
+                  Conclusão de Curso Completo de PHP 7<br></br>Onde: Udemy
+                  <br></br>Duração: 33.5 Horas<br></br>Aulas: 138<br></br>Data:
+                  2021 - 2023 <br></br>Conteúdos: PHP, Banco de Dados e
+                  Conceitos MVC, ORM e Orientação Ao Objeto.
+                </p>
+              </div>
+              <div className="certificate">
+                Certificado <FaAngleDoubleRight />
+              </div>
+            </div>
+            <div className="skill-container">
+              <div className="skill-img">
+                <img src={bradesco}></img>
+              </div>
+              <div className="text-skill">
+                <h2>Curso Bradesco</h2>
+                <p>
+                  Sistemas Operacionais - Conceitos Básicos<br></br>
+                  Onde: Fundação Bradesco<br></br>Duração: 5 Horas
+                </p>
+              </div>
+              <div className="certificate">
+                Certificado <FaAngleDoubleRight />
+              </div>
+            </div>
+            <div className="skill-container">
+              <div className="skill-img">
+                <img src={bradesco}></img>
+              </div>
+              <div className="text-skill">
+                <h2>Desenvolvimento de Sistemas</h2>
+                <p>
+                  Fundamentos de TI - Hardware e Software<br></br>
+                  Onde: Fundação Bradesco<br></br>Duração: 15 Horas
+                </p>
+              </div>
+              <div className="certificate">
+                Certificado <FaAngleDoubleRight />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div className="contact">
+        <div className="contact-title"></div>
+        <div className="contacts-type"></div>
       </div>
       <div className="circle"></div>
       <div className="circle2"></div>
