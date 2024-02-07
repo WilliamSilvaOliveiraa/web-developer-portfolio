@@ -294,6 +294,44 @@ function App() {
       <div className="circle"></div>
       <div className="circle2"></div>
       <div className="circle3"></div>
+      <div className="footer">
+        <div className="footer-contents">
+          <h1 className="footer-title">Navegue</h1>
+          <div className="footer-links">Início</div>
+          <div className="footer-links">Blog</div>
+          <div className="footer-links">Projetos</div>
+        </div>
+        <div className="footer-contents">
+          <div className="footer-title">Projetos</div>
+          <div className="footer-links">EuroGrill</div>
+          <div className="footer-links">Argus</div>
+          <div className="footer-links">Themed Authenticator</div>
+          <div className="footer-links">Qualquer Um</div>
+        </div>
+        <div className="footer-contents">
+          <div className="footer-title">Contato</div>
+          <div className="footer-links-contacts">
+            <div className="contact-icon">
+              <FaWhatsapp />{" "}
+            </div>{" "}
+            <div className="contact-content">55 19982249290</div>{" "}
+          </div>
+          <div className="footer-links-contacts">
+            <div className="contact-icon">
+              <FaLinkedin />
+            </div>
+            <div className="contact-content">Linked in</div>
+          </div>
+          <div className="footer-links-contacts">
+            <div className="contact-icon">
+              <SiGmail />
+            </div>
+            <div className="contact-content">
+              williamsilva20062005@gmail.com
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
