@@ -14,6 +14,16 @@ import bradesco from "./imgs/bradesco.png";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import eurogrillp from "./imgs/eurogrill-p.png";
+import argus from "./imgs/argus principal.png";
+import { TbBrandCpp } from "react-icons/tb";
+import { IoLogoVue } from "react-icons/io5";
+import { IoLogoCss3 } from "react-icons/io";
+import { SiMysql } from "react-icons/si";
+import { SiAdobephotoshop } from "react-icons/si";
+import { FaHtml5 } from "react-icons/fa";
+import authenticator from "./imgs/authenticator.png";
+import conversor from "./imgs/conversor.png";
 
 function App() {
   return (
@@ -83,7 +93,7 @@ function App() {
             <div className="circle5"></div>
             <div className="circle6"></div>
             <div className="circle7"></div>
-            <img src={siteFoto}></img>
+            <img src={eurogrillp}></img>
             <h2>EuroGrill</h2>
             <p>Ecommerce e blog local</p>
             <div className="card-footer">
@@ -100,14 +110,15 @@ function App() {
             <div className="circle5"></div>
             <div className="circle6"></div>
             <div className="circle7"></div>
-            <img src={siteFoto}></img>
-            <h2>EuroGrill</h2>
-            <p>Ecommerce e blog local</p>
+            <img src={argus}></img>
+            <h2>Argus</h2>
+            <p>Ferramenta Desktop Para Monitoramento Remoto</p>
             <div className="card-footer">
               <div className="tec-icons">
-                <FaReact />
-                <FaNode />
-                <SiAdobeillustrator />
+                <TbBrandCpp />
+                <SiMysql />
+                <IoLogoCss3 />
+                <SiAdobephotoshop />
               </div>
               <div className="btn-show">Ver Mais</div>
             </div>
@@ -119,12 +130,12 @@ function App() {
             <div className="circle5"></div>
             <div className="circle6"></div>
             <div className="circle7"></div>
-            <img src={siteFoto}></img>
-            <h2>EuroGrill</h2>
-            <p>Ecommerce e blog local</p>
+            <img src={authenticator}></img>
+            <h2>Authenticator</h2>
+            <p>Autenticador com Temas </p>
             <div className="card-footer">
               <div className="tec-icons">
-                <FaReact />
+                <IoLogoVue />
                 <FaNode />
                 <SiAdobeillustrator />
               </div>
@@ -153,9 +164,9 @@ function App() {
             <div className="circle5"></div>
             <div className="circle6"></div>
             <div className="circle7"></div>
-            <img src={siteFoto}></img>
-            <h2>EuroGrill</h2>
-            <p>Ecommerce e blog local</p>
+            <img src={conversor}></img>
+            <h2>Conversor</h2>
+            <p>Teste com cálculos em vue</p>
             <div className="card-footer">
               <div className="tec-icons">
                 <FaReact />

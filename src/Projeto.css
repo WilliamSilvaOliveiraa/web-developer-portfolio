@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0 0 0 0;
   overflow: hidden;
-  gap: 6rem;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -21,10 +21,11 @@
   justify-content: center;
   flex-direction: column;
   gap: 3vw;
+  margin-bottom: 5vw;
 }
 
 .project-top {
-  width: 85%;
+  width: 80%;
   display: flex;
   height: 100%;
   align-items: center;
@@ -39,11 +40,11 @@
 }
 
 .project-logo h2 {
-  margin: 0;
+  margin: 2vw 0 0 0;
   font-family: "Gilroy-Regular", sans-serif;
   word-spacing: 0.2em;
   color: #1b1c1e7e;
-  font-size: 1.3vw;
+  font-size: 1.1vw;
 }
 .project-logo img {
   width: 80%;
@@ -71,7 +72,7 @@
 .project-open {
   width: 12%;
   height: 3vw;
-  background: black;
+  background: #1b1c1e;
   border-radius: 50px;
   color: white;
   display: flex;
@@ -86,9 +87,9 @@
   width: 12%;
   height: 3vw;
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid #1b1c1e;
   border-radius: 50px;
-  color: black;
+  color: #1b1c1e;
   display: flex;
   align-items: center;
   justify-content: center;

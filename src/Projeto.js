@@ -25,7 +25,7 @@ function Projeto() {
         <div className="project-top">
           <div className="project-logo">
             <img src={eurogrill}></img>
-            <h2>texto do projeto</h2>
+            <h2>Ecommerce e blog sobre uma empresa de churrasqueiras.</h2>
           </div>
           <div className="project-mockup">
             <img src={m_eurogrill}></img>
