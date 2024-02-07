@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Oblivian Text Bold";
   src: local("Jörg Schmitt - Oblivian Text Bold"),
-    url("./fonts/Jörg Schmitt - Oblivian Text Bold.woff") format("woff");
+    url("../fonts/Jörg Schmitt - Oblivian Text Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -11,13 +11,13 @@
   font-style: normal;
   font-weight: normal;
   src: local("Oblivian Text Regular"),
-    url("./fonts/Jörg Schmitt - Oblivian Text.woff") format("woff");
+    url("../fonts/Jörg Schmitt - Oblivian Text.woff") format("woff");
 }
 
 @font-face {
   font-family: "Oblivian Text Black";
   src: local("Jörg Schmitt - Oblivian Text Black"),
-    url("./fonts/Jörg Schmitt - Oblivian Text Black.woff") format("woff");
+    url("../fonts/Jörg Schmitt - Oblivian Text Black.woff") format("woff");
   font-weight: black; /* Ou utilize 'black' se preferir */
   font-style: normal;
 }
@@ -25,7 +25,7 @@
 @font-face {
   font-family: "Oblivian Text Regular Italic";
   src: local("Jörg Schmitt - Oblivian Text Regular Italic"),
-    url("./fonts/Jörg Schmitt - Oblivian Text Regular Italic.woff")
+    url("../fonts/Jörg Schmitt - Oblivian Text Regular Italic.woff")
       format("woff");
   font-weight: normal;
   font-style: italic;
@@ -34,7 +34,7 @@
 @font-face {
   font-family: "OceanWide Regular";
   src: local("Oceanwide-Semibold"),
-    url("./fonts/Oceanwide-Semibold.otf") format("otf");
+    url("../fonts/Oceanwide-Semibold.otf") format("otf");
   font-weight: bold;
   font-style: italic;
 }
@@ -44,16 +44,16 @@
   font-style: normal;
   font-weight: normal;
   src: local("Oblivian Text Thin"),
-    url("./fonts/Jörg Schmitt - Oblivian Text Thin.woff") format("woff");
+    url("../fonts/Jörg Schmitt - Oblivian Text Thin.woff") format("woff");
 }
 
 @font-face {
   font-family: "Gilroy-Regular";
-  src: url("./fonts/Gilroy-Regular.ttf") format("opentype");
+  src: url("../fonts/Gilroy-Regular.ttf") format("opentype");
 }
 @font-face {
   font-family: "Gilroy-Medium";
-  src: url("./fonts/Gilroy-Medium.ttf") format("opentype");
+  src: url("../fonts/Gilroy-Medium.ttf") format("opentype");
 }
 
 .circle {

@@ -1,15 +1,28 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
-import Projeto from "./Projeto";
-
+import App from "./components/App";
+import Projeto from "./components/Projeto";
+import ProjetoArgus from "./components/ProjetoArgus";
+import ProjetoAuth from "./components/ProjetoAuth";
+import ProjetoCurrency from "./components/ProjetoCurrency";
+import ProjetoTodo from "./components/ProjetoTodo";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />}></Route>
+        <Route path="/eurogrill" element={<Projeto />}></Route>
+        <Route path="/argus" element={<ProjetoArgus />}></Route>
+        <Route path="/authenticator" element={<ProjetoAuth />}></Route>
+        <Route path="/curreny" element={<ProjetoCurrency />}></Route>
+        <Route path="/to-do-list" element={<ProjetoTodo />}></Route>
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 

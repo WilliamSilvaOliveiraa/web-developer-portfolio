@@ -1,41 +1,46 @@
-import "./App.css";
+import "../components/App.css";
 import { FaRegUser } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import Perfil from "./imgs/Perfil.jpg";
 import { FaReact } from "react-icons/fa";
 import { FaNode } from "react-icons/fa";
 import { SiAdobeillustrator } from "react-icons/si";
-import siteFoto from "./imgs/modelo.png";
-import etec from "./imgs/etec.jpg";
-import react from "./imgs/react.png";
-import php from "./imgs/php.png";
-import bradesco from "./imgs/bradesco.png";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
-import eurogrillp from "./imgs/eurogrill-p.png";
-import argus from "./imgs/argus principal.png";
 import { TbBrandCpp } from "react-icons/tb";
 import { IoLogoVue } from "react-icons/io5";
 import { IoLogoCss3 } from "react-icons/io";
 import { SiMysql } from "react-icons/si";
 import { SiAdobephotoshop } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
-import authenticator from "./imgs/authenticator.png";
-import conversor from "./imgs/conversor.png";
+import { SiGmail } from "react-icons/si";
+
+import Perfil from "../imgs/Perfil.jpg";
+import siteFoto from "../imgs/modelo.png";
+import etec from "../imgs/etec.jpg";
+import react from "../imgs/react.png";
+import php from "../imgs/php.png";
+import bradesco from "../imgs/bradesco.png";
+import eurogrillp from "../imgs/eurogrill-p.png";
+import argus from "../imgs/argus principal.png";
+import authenticator from "../imgs/authenticator.png";
+import conversor from "../imgs/conversor.png";
+
+import { Link } from "react-router-dom";
 
 function App() {
   return (
     <div class="main">
       <div className="navbar">
-        <h1 className="">
-          <code>{"<Silva />"}</code>
-        </h1>
+        <Link to="/">
+          {" "}
+          <h1 className="">
+            <code>{"<Silva />"}</code>
+          </h1>
+        </Link>
 
         <div className="links">
-          <a href="">Blog</a>
-          <a href="">EuroGrill Ecommerce</a>
+          <Link to="/eurogrill"> EuroGrill Ecommerce</Link>
           <a href="">Themed Authenticator </a>
           <a href="">Currency converter</a>
           <a href="">Argus</a>
@@ -51,11 +56,11 @@ function App() {
           React, saiba mais sobre mim{" "}
         </p>
         <div className="link-social">
-          <a href="">
+          <a href="https://github.com/WilliamSilvaOliveiraa">
             <FaGithub />
             GitHub
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/william-oliver-6a981b22a/">
             <FaLinkedin />
             Linkedin
           </a>
