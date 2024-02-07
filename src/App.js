@@ -12,6 +12,8 @@ import react from "./imgs/react.png";
 import php from "./imgs/php.png";
 import bradesco from "./imgs/bradesco.png";
 import { FaAngleDoubleRight } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 function App() {
   return (
@@ -218,7 +220,7 @@ function App() {
                   Conclusão de Curso Completo de PHP 7<br></br>Onde: Udemy
                   <br></br>Duração: 33.5 Horas<br></br>Aulas: 138<br></br>Data:
                   2021 - 2023 <br></br>Conteúdos: PHP, Banco de Dados e
-                  Conceitos MVC, ORM e Orientação Ao Objeto.
+                  Conceitos MVC e ORM.
                 </p>
               </div>
               <div className="certificate">
@@ -259,8 +261,35 @@ function App() {
         </div>
       </div>
       <div className="contact">
-        <div className="contact-title"></div>
-        <div className="contacts-type"></div>
+        <div className="contact-title">
+          <h1>Contato</h1>
+          <p>
+            Caso você tenha se interessado e deseja trabalhar comigo, você pode
+            entrar em contato
+          </p>
+        </div>
+        <div className="contacts-type">
+          <div className="contact-type">
+            <div className="contact-icon">
+              <FaWhatsapp />{" "}
+            </div>{" "}
+            <div className="contact-content">55 19982249290</div>{" "}
+          </div>
+          <a href="youtube" className="contact-type">
+            <div className="contact-icon">
+              <FaLinkedin />
+            </div>
+            <div className="contact-content">Linked in</div>
+          </a>
+          <div className="contact-type">
+            <div className="contact-icon">
+              <SiGmail />
+            </div>
+            <div className="contact-content">
+              williamsilva20062005@gmail.com
+            </div>
+          </div>
+        </div>
       </div>
       <div className="circle"></div>
       <div className="circle2"></div>

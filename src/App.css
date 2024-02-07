@@ -238,7 +238,7 @@ code {
 
 .text-img {
   display: flex;
-  width: 76%;
+  width: 65%;
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -269,7 +269,7 @@ code {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 }
 
 .img-bola img {
@@ -348,7 +348,7 @@ code {
   background: #f3f3ff;
   padding: 8px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 8px;
   transition: transform 0.5s ease;
   cursor: pointer;
 }
@@ -369,6 +369,9 @@ code {
   margin: 0;
   width: 100%;
   z-index: 2;
+  font-family: "Gilroy-Regular", sans-serif;
+  word-spacing: 0.2em;
+  font-size: 1.4vw;
 }
 .project-container p {
   margin: 0;
@@ -376,6 +379,7 @@ code {
   width: 100%;
   margin-bottom: 0.5vw;
   z-index: 2;
+  font-size: 1.2vw;
 }
 .card-footer {
   width: 100%;
@@ -388,6 +392,7 @@ code {
 .tec-icons {
   display: flex;
   gap: 1vw;
+  font-size: 1.2vw;
 }
 
 .btn-show {
@@ -399,6 +404,7 @@ code {
   cursor: pointer;
   border-radius: 20px;
   color: #4d4d53;
+  font-size: 1vw;
 }
 
 .circle4 {
@@ -583,7 +589,7 @@ code {
 
 .text-skill {
   width: 100%;
-  height: 14vw;
+  height: 13vw;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -599,4 +605,79 @@ code {
   align-items: start;
   justify-content: start;
   gap: 1vw;
+}
+
+.contact {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+
+.contact-title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.contact-title h1 {
+  font-family: "Gilroy-Medium", sans-serif;
+  word-spacing: 0.2em;
+  margin: 0;
+  color: #1b1c1e;
+  font-size: 1.6rem;
+}
+
+.contact-title p {
+  font-family: "Gilroy-Medium", sans-serif;
+  word-spacing: 0.2em;
+  margin: 0;
+  width: 40%;
+  text-align: center;
+  color: #1b1c1ed0;
+  font-size: 1rem;
+}
+
+.contacts-type {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.contact-type {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  border: 1px solid #1b1c1ea2;
+  padding: 1%;
+  background: transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.contact-content {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 1vw;
+  color: #1b1c1e;
+  font-family: "Gilroy-Medium", sans-serif;
+  word-spacing: 0.2em;
+}
+
+.contact-icon {
+  width: 0%;
+  color: #1b1c1e;
 }
