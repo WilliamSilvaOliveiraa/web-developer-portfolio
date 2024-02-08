@@ -99,6 +99,7 @@
   background: #f3f3ff;
   box-sizing: border-box;
   width: 100%;
+  overflow: hidden !important;
 
   min-height: 100vh;
   margin: 0;
@@ -119,10 +120,17 @@
   overflow: hidden;
 }
 
+.text-not {
+  text-decoration: none;
+}
+
 code {
+  position: relative;
+  z-index: 2;
   font-size: 2.2vw;
   background-clip: text;
   color: transparent;
+  text-decoration: none;
   background-image: radial-gradient(
     circle,
     #fb0b89,
@@ -142,10 +150,30 @@ code {
 
 .links a {
   text-decoration: none;
-  color: #1b1c1e;
-  font-family: "Inter", sans-serif;
+  color: #1b1c1ed0;
+  font-family: "Gilroy-Medium", sans-serif;
+  word-spacing: 0.2em;
   font-size: 1vw;
   font-weight: 500;
+  position: relative;
+  display: inline-block; /* Adicionado para centralizar o sublinhado */
+}
+
+.links a::after {
+  content: "";
+  display: block;
+  width: 80%; /* Largura do sublinhado ajustada para 80% */
+  height: 1px; /* Altura do sublinhado */
+  background-color: #1b1c1ed0; /* Cor do sublinhado */
+  position: absolute;
+  bottom: -5px;
+  left: 10%; /* Ajuste para centralizar o sublinhado */
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.links a:hover::after {
+  transform: scaleX(1); /* revelar o sublinhado no hover */
 }
 
 .icone-user {
@@ -187,7 +215,8 @@ code {
   );
 }
 .title p {
-  font-family: "Oblivian Text Normal", sans-serif;
+  font-family: "Gilroy-Medium", sans-serif;
+
   color: #1b1c1ea2;
   font-size: 0.875rem;
   margin: 0 32vw;
@@ -393,6 +422,7 @@ code {
   display: flex;
   gap: 1vw;
   font-size: 1.2vw;
+  color: #4d4d53;
 }
 
 .btn-show {
@@ -688,6 +718,7 @@ code {
   background: black;
   display: flex;
   align-items: center;
+  z-index: 2;
   justify-content: space-around;
 }
 

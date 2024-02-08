@@ -2,18 +2,18 @@ import "../components/App.css";
 import { FaRegUser } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { FaNode } from "react-icons/fa";
 import { SiAdobeillustrator } from "react-icons/si";
 import { FaAngleDoubleRight } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
 import { TbBrandCpp } from "react-icons/tb";
 import { IoLogoVue } from "react-icons/io5";
 import { IoLogoCss3 } from "react-icons/io";
 import { SiMysql } from "react-icons/si";
 import { SiAdobephotoshop } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
 
 import Perfil from "../imgs/Perfil.jpg";
 import siteFoto from "../imgs/modelo.png";
@@ -25,14 +25,18 @@ import eurogrillp from "../imgs/eurogrill-p.png";
 import argus from "../imgs/argus principal.png";
 import authenticator from "../imgs/authenticator.png";
 import conversor from "../imgs/conversor.png";
-
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function App() {
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div class="main">
       <div className="navbar">
-        <Link to="/">
+        <Link to="/" className="text-not">
           {" "}
           <h1 className="">
             <code>{"<Silva />"}</code>
@@ -93,7 +97,7 @@ function App() {
           <h2>Veja os projetos onde coloquei meu conhecimento em prática</h2>
         </div>
         <div className="projects-container-2">
-          <div className="project-container">
+          <Link to="/eurogrill" className=" project-container text-not">
             <div className="circle4"></div>
             <div className="circle5"></div>
             <div className="circle6"></div>
@@ -109,7 +113,7 @@ function App() {
               </div>
               <div className="btn-show">Ver Mais</div>
             </div>
-          </div>
+          </Link>
           <div className="project-container">
             <div className="circle4"></div>
             <div className="circle5"></div>
