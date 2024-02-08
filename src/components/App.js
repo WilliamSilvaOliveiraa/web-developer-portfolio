@@ -26,9 +26,11 @@ import argus from "../imgs/argus principal.png";
 import authenticator from "../imgs/authenticator.png";
 import conversor from "../imgs/conversor.png";
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
-
+import { Link, useLocation } from "react-router-dom";
 function App() {
+  const handleExternalLinkClick = (url) => {
+    window.open(url, "_blank");
+  };
   useEffect(() => {
     // Scroll to the top when the component mounts
     window.scrollTo(0, 0);
@@ -45,12 +47,20 @@ function App() {
 
         <div className="links">
           <Link to="/eurogrill"> EuroGrill Ecommerce</Link>
-          <a href="">Themed Authenticator </a>
-          <a href="">Currency converter</a>
-          <a href="">Argus</a>
+          <Link to="/authenticator"> Themed Authenticator</Link>
+          <Link to="/currency"> Currency Converter</Link>
+          <Link to="/argus"> Argus</Link>
         </div>
 
-        <FaRegUser className="icone-user" />
+        <a
+          className="pointer"
+          onClick={() =>
+            handleExternalLinkClick("https://linktr.ee/WilliamOliveiraSilva")
+          }
+        >
+          {" "}
+          <FaRegUser className="icone-user" />
+        </a>
       </div>
       <div className="title">
         <h2>Seu próximo desenvolvedor</h2>

@@ -19,7 +19,7 @@ root.render(
         <Route path="/eurogrill" element={<Projeto />}></Route>
         <Route path="/argus" element={<ProjetoArgus />}></Route>
         <Route path="/authenticator" element={<ProjetoAuth />}></Route>
-        <Route path="/curreny" element={<ProjetoCurrency />}></Route>
+        <Route path="/currency" element={<ProjetoCurrency />}></Route>
         <Route path="/to-do-list" element={<ProjetoTodo />}></Route>
       </Routes>
     </Router>

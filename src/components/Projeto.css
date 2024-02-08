@@ -143,10 +143,10 @@
   bottom: 20%;
   left: 10%;
   transform: translate(-50%, -50%);
-  width: 50px;
+  width: 100px;
   height: 800px;
   transform: rotate(50deg);
-  filter: blur(180px);
+  filter: blur(120px);
   opacity: 0.15;
   z-index: 1;
   background: linear-gradient(to left, #6000ce 40%, #1900ff 50%);

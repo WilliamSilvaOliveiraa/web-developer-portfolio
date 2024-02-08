@@ -11,6 +11,9 @@ import { useSpring, animated, config } from "react-spring"; // Certifique-se de 
 import React, { useEffect, useState } from "react";
 
 function Projeto() {
+  const handleExternalLinkClick = (url) => {
+    window.open(url, "_blank");
+  };
   useEffect(() => {
     // Scroll to the top when the component mounts
     window.scrollTo(0, 0);
@@ -43,13 +46,20 @@ function Projeto() {
         </Link>
 
         <div className="links">
-          <a href="">EuroGrill Ecommerce</a>
-          <a href="">Themed Authenticator </a>
-          <a href="">Currency converter</a>
-          <a href="">Argus</a>
+          <Link to="/eurogrill"> EuroGrill Ecommerce</Link>
+          <Link to="/authenticator"> Themed Authenticator</Link>
+          <Link to="/currency"> Currency Converter</Link>
+          <Link to="/argus"> Argus</Link>
         </div>
-
-        <FaRegUser className="icone-user" />
+        <a
+          className="pointer"
+          onClick={() =>
+            handleExternalLinkClick("https://linktr.ee/WilliamOliveiraSilva")
+          }
+        >
+          {" "}
+          <FaRegUser className="icone-user" />
+        </a>
       </div>
       <div className="project-page">
         <div className="project-top">
