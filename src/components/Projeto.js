@@ -74,39 +74,38 @@ function Projeto() {
         <div className="footer-padding">
           <div className="footer-contents">
             <h1 className="footer-title">Navegue</h1>
-            <div className="footer-links">Início</div>
-            <div className="footer-links">Blog</div>
-            <div className="footer-links">Projetos</div>
+            <a className="footer-links">Início</a>
+            <a className="footer-links">Blog</a>
+            <a className="footer-links">Projetos</a>
           </div>
           <div className="footer-contents">
             <h1 className="footer-title">Projetos</h1>
-            <div className="footer-links">EuroGrill</div>
-            <div className="footer-links">Argus</div>
-            <div className="footer-links">Themed Authenticator</div>
-            <div className="footer-links">Qualquer Um</div>
+            <a className="footer-links">EuroGrill</a>
+            <a className="footer-links">Argus</a>
+            <a className="footer-links">Themed Authenticator</a>
           </div>
           <div className="footer-contents">
             <h1 className="footer-title">Contato</h1>
-            <div className="footer-links-contacts">
+            <a className="footer-links-contacts">
               <div className="contact-icon left white">
                 <FaWhatsapp />{" "}
               </div>{" "}
               <div className="contact-content white-text">55 19982249290</div>{" "}
-            </div>
-            <div className="footer-links-contacts">
+            </a>
+            <a className="footer-links-contacts">
               <div className="contact-icon left white">
                 <FaLinkedin />
               </div>
               <div className="contact-content white-text">Linked in</div>
-            </div>
-            <div className="footer-links-contacts">
+            </a>
+            <a className="footer-links-contacts">
               <div className="contact-icon left white">
                 <SiGmail />
               </div>
               <div className="contact-content white-text">
                 williamsilva20062005@gmail.com
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
