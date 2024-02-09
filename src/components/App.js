@@ -179,7 +179,7 @@ function App() {
               <div className="btn-show">Ver Mais</div>
             </div>
           </Link>
-          <div className="project-container">
+          <div className="project-container desativar">
             <div className="circle4"></div>
             <div className="circle5"></div>
             <div className="circle6"></div>
@@ -287,15 +287,22 @@ function App() {
                 <h2>Desenvolvimento de Sistemas</h2>
                 <p>
                   Formado em Técnico em Desenvolvimentos de Sistemas<br></br>
-                  Onde: Etec João Berlamino<br></br>Duração: 3 Anos <br></br>{" "}
-                  Data: 2021 - 2023 <br></br>Conteúdos: Kotlin, PHP 7, React,
-                  Laravel, Xamp, MySQL, HeidiSQl, HTML, CSS, Vs, VsCode, C#, C e
-                  Arduino.
+                  <b>
+                    <b>Onde</b>
+                  </b>
+                  : Etec João Berlamino<br></br>
+                  <b>Duração</b>: 3 Anos <br></br> Data: 2021 - 2023 <br></br>
+                  <b>Contéudos</b>: Kotlin, PHP 7, React, Laravel, Xamp, MySQL,
+                  HeidiSQl, HTML, CSS, Vs, VsCode, C#, C e Arduino.
                 </p>
               </div>
-              <div className="certificate">
+              <a
+                href="https://drive.google.com/file/d/1d_b6NyzO_jL34XAb43gDAeOHFDruIjnS/view?usp=sharing"
+                target="_blank"
+                className="certificate not"
+              >
                 Certificado <FaAngleDoubleRight />
-              </div>
+              </a>
             </div>
             <div className="skill-container">
               <div className="skill-img">
@@ -304,63 +311,85 @@ function App() {
               <div className="text-skill">
                 <h2>Curso React + Redux Completo</h2>
                 <p>
-                  Conclusão de Curso React + Redux<br></br>Onde: Udemy<br></br>
-                  Duração: 54.5 Horas <br></br> Aulas: 444<br></br>Contéudos:
-                  React Js, Redux, Webpack, Redux-Form, MongoDB, Express e Node.
+                  Conclusão de Curso React + Redux<br></br>
+                  <b>Onde</b>: Udemy<br></br>
+                  <b>Duração</b>: 54.5 Horas <br></br> Aulas: 444<br></br>
+                  <b>Contéudos</b>: React Js, Redux, Webpack, Redux-Form,
+                  MongoDB, Express e Node.
                 </p>
               </div>
-              <div className="certificate">
+              <a
+                href="https://drive.google.com/file/d/17xfuwuKK3z1R4p00hyExgKkgBTEWaII1/view?usp=sharing"
+                target="_blank"
+                className="certificate not"
+              >
                 Certificado <FaAngleDoubleRight />
-              </div>
+              </a>
             </div>
           </div>
           <div className="skill-containers-3">
-            <div className="skill-container">
+            <div className="skill-container" id="zez">
               <div className="skill-img">
                 <img src={php}></img>
               </div>
               <div className="text-skill">
                 <h2>Curso Completo de PHP 7</h2>
-                <p>
-                  Conclusão de Curso Completo de PHP 7<br></br>Onde: Udemy
-                  <br></br>Duração: 33.5 Horas<br></br>Aulas: 138<br></br>Data:
-                  2021 - 2023 <br></br>Conteúdos: PHP, Banco de Dados e
-                  Conceitos MVC e ORM.
+                <p className="desativar-p">
+                  Conclusão de Curso Completo de PHP 7<br></br>
+                  <b>Onde</b>: Udemy
+                  <br></br>
+                  <b>Duração</b>: 33.5 Horas<br></br>Aulas: 138<br></br>Data:
+                  2021 - 2023 <br></br>
+                  <b>Contéudos</b>: PHP, Banco de Dados e Conceitos MVC e ORM.
                 </p>
               </div>
-              <div className="certificate">
+              <a
+                href="https://drive.google.com/file/d/183DsT9fZG8HwE5oa7WYp05HiGhcuem7W/view?usp=sharing"
+                target="_blank"
+                className="certificate not"
+              >
                 Certificado <FaAngleDoubleRight />
-              </div>
+              </a>
             </div>
-            <div className="skill-container">
+            <div className="skill-container" id="zez">
               <div className="skill-img">
                 <img src={bradesco}></img>
               </div>
               <div className="text-skill">
                 <h2>Curso Bradesco</h2>
-                <p>
+                <p className="desativar-p">
                   Sistemas Operacionais - Conceitos Básicos<br></br>
-                  Onde: Fundação Bradesco<br></br>Duração: 5 Horas
+                  <b>Onde</b>: Fundação Bradesco<br></br>
+                  <b>Duração</b>: 5 Horas
                 </p>
               </div>
-              <div className="certificate">
+              <a
+                href="https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateDialog.aspx?AFeaPo%2buSXJjQ4dhIhPPcbL74xYk%2fnS3"
+                target="_blank"
+                className="certificate not"
+              >
                 Certificado <FaAngleDoubleRight />
-              </div>
+              </a>
             </div>
-            <div className="skill-container">
+            <div className="skill-container " id="zez">
               <div className="skill-img">
                 <img src={bradesco}></img>
               </div>
               <div className="text-skill">
-                <h2>Desenvolvimento de Sistemas</h2>
-                <p>
+                <h2>Curso Bradesco</h2>
+                <p className="desativar-p">
                   Fundamentos de TI - Hardware e Software<br></br>
-                  Onde: Fundação Bradesco<br></br>Duração: 15 Horas
+                  <b>Onde</b>: Fundação Bradesco<br></br>
+                  <b>Duração</b>: 15 Horas
                 </p>
               </div>
-              <div className="certificate">
+              <a
+                href="https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateDialog.aspx?AFeaPo%2buSXLqYHBTxoppwmOY7JMhlQx9"
+                target="_blank"
+                className="certificate not"
+              >
                 Certificado <FaAngleDoubleRight />
-              </div>
+              </a>
             </div>
           </div>
         </div>
