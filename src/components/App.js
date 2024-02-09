@@ -35,6 +35,7 @@ function App() {
     // Scroll to the top when the component mounts
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div class="main">
       <div className="navbar">
@@ -124,27 +125,7 @@ function App() {
               <div className="btn-show">Ver Mais</div>
             </div>
           </Link>
-          <div className="project-container">
-            <div className="circle4"></div>
-            <div className="circle5"></div>
-            <div className="circle6"></div>
-            <div className="circle7"></div>
-            <img src={argus}></img>
-            <h2>Argus</h2>
-            <p>Ferramenta Desktop Para Monitoramento Remoto</p>
-            <div className="card-footer">
-              <div className="tec-icons">
-                <TbBrandCpp />
-                <SiMysql />
-                <IoLogoCss3 />
-                <SiAdobephotoshop />
-              </div>
-              <div className="btn-show">Ver Mais</div>
-            </div>
-          </div>
-        </div>
-        <div className="projects-container-3">
-          <div className="project-container">
+          <Link to="/authenticator" className="project-container text-not">
             <div className="circle4"></div>
             <div className="circle5"></div>
             <div className="circle6"></div>
@@ -160,25 +141,28 @@ function App() {
               </div>
               <div className="btn-show">Ver Mais</div>
             </div>
-          </div>
-          <div className="project-container">
+          </Link>
+        </div>
+        <div className="projects-container-3">
+          <Link to="/argus" className="project-container text-not">
             <div className="circle4"></div>
             <div className="circle5"></div>
             <div className="circle6"></div>
             <div className="circle7"></div>
-            <img src={siteFoto}></img>
-            <h2>EuroGrill</h2>
-            <p>Ecommerce e blog local</p>
+            <img src={argus}></img>
+            <h2>Argus</h2>
+            <p>Ferramenta De Monitoramento</p>
             <div className="card-footer">
               <div className="tec-icons">
-                <FaReact />
-                <FaNode />
-                <SiAdobeillustrator />
+                <TbBrandCpp />
+                <SiMysql />
+                <IoLogoCss3 />
+                <SiAdobephotoshop />
               </div>
               <div className="btn-show">Ver Mais</div>
             </div>
-          </div>
-          <div className="project-container">
+          </Link>
+          <Link to="/currency" className="project-container text-not">
             <div className="circle4"></div>
             <div className="circle5"></div>
             <div className="circle6"></div>
@@ -194,13 +178,104 @@ function App() {
               </div>
               <div className="btn-show">Ver Mais</div>
             </div>
+          </Link>
+          <div className="project-container">
+            <div className="circle4"></div>
+            <div className="circle5"></div>
+            <div className="circle6"></div>
+            <div className="circle7"></div>
+            <img src={siteFoto}></img>
+            <h2>Empty</h2>
+            <p>‎ ‎ </p>
+            <div className="card-footer">
+              <div className="tec-icons"></div>
+              <div className="btn-show">Vazio</div>
+            </div>
           </div>
         </div>
       </div>
       <div className="skills">
         <div className="skill-title">
-          <h1>Habilidades e Certificados</h1>
+          <h1>Informações</h1>
           <h2>Conheça minha formação</h2>
+        </div>
+        <div className="skill-text-carac">
+          <div className="skill-left">
+            <div className="skill-info">
+              <h1>Formação:</h1>
+              <h2>
+                ETEC João Belarmino: Técnico em Desenvolvimento de Sistemas -
+                Amparo, SP Fevereiro/2021 - Dezembro/2023;
+              </h2>
+            </div>
+            <div className="skill-info">
+              <h1>Experiência:</h1>
+              <h2>
+                • Freelancer, <i>São Paulo</i> - <b>Desenvolvedor FrontEnd</b>
+              </h2>
+              <h2>
+                <i>Dezembro 2023 - Presente</i>
+              </h2>
+              <br></br>
+              <h2 id="h2-bottom">
+                <b>Projeto:</b> EuroGrillㅤ
+                <a href="http://eurogrillchurrasqueiras.com.br" target="_blank">
+                  (Link do Projeto)
+                </a>
+              </h2>
+              <h2>
+                O site oferece uma interface fácil de usar para análisar preços,
+                fotos e ambientes de um estrutura para futuras intalações de
+                churrasqueiras
+              </h2>
+              <br></br>ㅤ
+              <h2>
+                • Trabalho de Conclusão de Curso, <i>Amparo</i>
+              </h2>
+              <h2>
+                <i>2023</i>
+              </h2>
+              <br></br>
+              <h2 id="h2-bottom">
+                <b>Projeto:</b> Argus ㅤ
+                <Link to="/argus" target="_blank">
+                  (Link do Projeto)
+                </Link>
+              </h2>
+              <h2>
+                Argus foi uma aplicação Desktop produzido em c++ onde é
+                responsável por monitorar máquinas de forma remota através de
+                uma conexão IP PORTA
+              </h2>
+            </div>
+          </div>
+          <div className="skill-right">
+            <div className="skill-info">
+              <h1>Tecnologias:</h1>
+              <h2>
+                React<br></br>
+                JavaScript(Es6)<br></br>
+                HTML<br></br>
+                Css<br></br>
+                PHP<br></br>
+                C++<br></br>
+                Bootstrap<br></br>
+                Git / Github<br></br>
+                User Experience (UX)<br></br>
+                Figma<br></br>
+                Photoshop<br></br>
+              </h2>
+            </div>
+            <div className="skill-info">
+              <h1>Idioma:</h1>
+              <h2>Português - Nativo</h2>
+              <h2>Inglês - Avançado</h2>
+            </div>
+          </div>
+        </div>
+        <div className="skill-title">
+          <h1>Certificados</h1>
+          <h2>Meus cursos e Certificados</h2>
         </div>
         <div className="skill-containers">
           <div className="skill-containers-2">
@@ -305,7 +380,11 @@ function App() {
             </div>{" "}
             <div className="contact-content center">55 19982249290</div>{" "}
           </div>
-          <a href="youtube" className="contact-type">
+          <a
+            href="https://www.linkedin.com/in/william-oliver-6a981b22a/"
+            target="_blank"
+            className="contact-type"
+          >
             <div className="contact-icon">
               <FaLinkedin />
             </div>
@@ -332,15 +411,29 @@ function App() {
         <div className="footer-padding">
           <div className="footer-contents">
             <h1 className="footer-title">Navegue</h1>
-            <a className="footer-links">Início</a>
-            <a className="footer-links">Blog</a>
-            <a className="footer-links">Projetos</a>
+            <Link to="/" className="footer-links not">
+              Início
+            </Link>
+            <a
+              href="https://linktr.ee/WilliamOliveiraSilva"
+              target="_blank"
+              className="footer-links not"
+            >
+              Blog
+            </a>
           </div>
           <div className="footer-contents">
             <h1 className="footer-title">Projetos</h1>
-            <a className="footer-links">EuroGrill</a>
-            <a className="footer-links">Argus</a>
-            <a className="footer-links">Themed Authenticator</a>
+            <Link className="footer-links not" to="/eurogrill">
+              EuroGrill Ecommerce
+            </Link>
+
+            <Link className="footer-links not" to="/argus">
+              Argus
+            </Link>
+            <Link className="footer-links not" to="/argus">
+              Authenticator
+            </Link>
           </div>
           <div className="footer-contents">
             <h1 className="footer-title">Contato</h1>
@@ -350,7 +443,11 @@ function App() {
               </div>{" "}
               <div className="contact-content white-text">55 19982249290</div>{" "}
             </a>
-            <a className="footer-links-contacts">
+            <a
+              href="https://www.linkedin.com/in/william-oliver-6a981b22a/"
+              target="_blank"
+              className="footer-links-contacts not"
+            >
               <div className="contact-icon left white">
                 <FaLinkedin />
               </div>

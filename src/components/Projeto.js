@@ -72,10 +72,19 @@ function Projeto() {
           </animated.div>
         </div>
         <div className="project-buttons">
-          <a href="#" className="project-open">
+          <a
+            href="http://eurogrillchurrasqueiras.com.br"
+            target="_blank"
+            className="project-open"
+          >
             <p>Abrir Projeto</p>
           </a>
-          <a href="#" className="project-repo">
+
+          <a
+            href="https://github.com/WilliamSilvaOliveiraa/eurogrill-website"
+            target="_blank"
+            className="project-repo"
+          >
             <p>Abrir Repositório</p>
           </a>
         </div>
@@ -84,15 +93,29 @@ function Projeto() {
         <div className="footer-padding">
           <div className="footer-contents">
             <h1 className="footer-title">Navegue</h1>
-            <a className="footer-links">Início</a>
-            <a className="footer-links">Blog</a>
-            <a className="footer-links">Projetos</a>
+            <Link to="/" className="footer-links not">
+              Início
+            </Link>
+            <a
+              href="https://linktr.ee/WilliamOliveiraSilva"
+              target="_blank"
+              className="footer-links not"
+            >
+              Blog
+            </a>
           </div>
           <div className="footer-contents">
             <h1 className="footer-title">Projetos</h1>
-            <a className="footer-links">EuroGrill</a>
-            <a className="footer-links">Argus</a>
-            <a className="footer-links">Themed Authenticator</a>
+            <Link className="footer-links not" to="/eurogrill">
+              EuroGrill Ecommerce
+            </Link>
+
+            <Link className="footer-links not" to="/argus">
+              Argus
+            </Link>
+            <Link className="footer-links not" to="/argus">
+              Authenticator
+            </Link>
           </div>
           <div className="footer-contents">
             <h1 className="footer-title">Contato</h1>
@@ -102,7 +125,11 @@ function Projeto() {
               </div>{" "}
               <div className="contact-content white-text">55 19982249290</div>{" "}
             </a>
-            <a className="footer-links-contacts">
+            <a
+              href="https://www.linkedin.com/in/william-oliver-6a981b22a/"
+              target="_blank"
+              className="footer-links-contacts not"
+            >
               <div className="contact-icon left white">
                 <FaLinkedin />
               </div>

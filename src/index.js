@@ -6,7 +6,7 @@ import Projeto from "./components/Projeto";
 import ProjetoArgus from "./components/ProjetoArgus";
 import ProjetoAuth from "./components/ProjetoAuth";
 import ProjetoCurrency from "./components/ProjetoCurrency";
-import ProjetoTodo from "./components/ProjetoTodo";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
@@ -20,7 +20,6 @@ root.render(
         <Route path="/argus" element={<ProjetoArgus />}></Route>
         <Route path="/authenticator" element={<ProjetoAuth />}></Route>
         <Route path="/currency" element={<ProjetoCurrency />}></Route>
-        <Route path="/to-do-list" element={<ProjetoTodo />}></Route>
       </Routes>
     </Router>
   </React.StrictMode>
