@@ -153,6 +153,10 @@ code {
   gap: 2vw;
 }
 
+.icone-nav {
+  display: none;
+}
+
 .links a {
   text-decoration: none;
   color: #1b1c1ed0;
@@ -162,6 +166,10 @@ code {
   font-weight: 500;
   position: relative;
   display: inline-block; /* Adicionado para centralizar o sublinhado */
+}
+
+.menu-dropdown {
+  display: none;
 }
 
 .links a::after {
@@ -1418,13 +1426,14 @@ code {
 @media screen and (max-width: 767px) {
   .navbar {
     width: 100%;
-    height: 70px;
+    height: 100%;
     background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5vw;
+    gap: 0;
     overflow: hidden;
+    z-index: 1000;
   }
   .links a {
     text-decoration: none;
@@ -1439,7 +1448,7 @@ code {
   .icone-user {
     align-items: end;
     color: #1b1c1e;
-    font-size: 4vw;
+    font-size: 7vw;
   }
 
   .title {
@@ -1485,14 +1494,20 @@ code {
     text-align: center;
   }
   .links {
-    display: flex;
     gap: 2vw;
+    display: none;
+  }
+
+  .icone-nav {
+    display: block;
+    font-size: 8vw;
+    width: 100%;
   }
 
   code {
     position: relative;
     z-index: 2;
-    font-size: 3.7vw;
+    font-size: 6vw;
     background-clip: text;
     color: transparent;
     text-decoration: none;
@@ -1819,6 +1834,7 @@ code {
     justify-content: center;
     flex-direction: column;
     gap: 2vw;
+    z-index: 50;
   }
   .skill-container .desativar {
     display: none;
@@ -1920,8 +1936,7 @@ code {
     height: 100%;
     width: 100%;
   }
-  #zez .text-skill {
-  }
+
   .contact-title p {
     font-family: "Gilroy-Medium", sans-serif;
     word-spacing: 0.2em;
@@ -2023,6 +2038,14 @@ code {
     cursor: pointer;
   }
 
+  .text-not {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .white {
     transition: color 0.3s ease;
     color: white;
@@ -2053,5 +2076,57 @@ code {
     display: flex;
     flex-direction: column;
     gap: 3vw;
+  }
+
+  .navbar-responsive .pointer {
+    display: none;
+  }
+
+  .navbar-responsive .text-not {
+    display: none;
+  }
+
+  .navbar-responsive .links {
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 20vw 0;
+    display: flex;
+  }
+
+  .navbar-responsive .links a {
+    font-size: 6vw;
+  }
+
+  .icone-nav-responsive {
+    font-size: 20vw;
+    padding-top: 20vw;
+
+    width: 100%;
+  }
+
+  .navbar-responsive {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+
+    gap: 20vw;
+    height: 100%;
+    width: 100%;
+    background: gainsboro;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .pointer {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

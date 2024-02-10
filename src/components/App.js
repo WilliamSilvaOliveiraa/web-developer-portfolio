@@ -25,12 +25,26 @@ import eurogrillp from "../imgs/eurogrill-p.png";
 import argus from "../imgs/argus principal.png";
 import authenticator from "../imgs/authenticator.png";
 import conversor from "../imgs/conversor.png";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
+
 function App() {
+  const [navbarClass, setNavbarClass] = useState("navbar");
+  const [menuIconVisible, setMenuIconVisible] = useState(true);
+
   const handleExternalLinkClick = (url) => {
     window.open(url, "_blank");
   };
+
+  const toggleNavbar = () => {
+    setNavbarClass((prevClass) =>
+      prevClass === "navbar" ? "navbar-responsive" : "navbar"
+    );
+    setMenuIconVisible((prevVisible) => !prevVisible);
+  };
+
   useEffect(() => {
     // Scroll to the top when the component mounts
     window.scrollTo(0, 0);
@@ -38,28 +52,30 @@ function App() {
 
   return (
     <div class="main">
-      <div className="navbar">
+      <div className={navbarClass}>
         <Link to="/" className="text-not">
-          {" "}
           <h1 className="">
             <code>{"<Silva />"}</code>
           </h1>
         </Link>
-
+        {menuIconVisible && (
+          <IoMenu className="icone-nav" onClick={toggleNavbar} />
+        )}
+        {!menuIconVisible && (
+          <IoClose className="icone-nav-responsive" onClick={toggleNavbar} />
+        )}
         <div className="links">
           <Link to="/eurogrill"> EuroGrill Ecommerce</Link>
           <Link to="/authenticator"> Themed Authenticator</Link>
           <Link to="/currency"> Currency Converter</Link>
-          <Link to="/argus"> Argus</Link>
+          <Link to="/argus"> Argus TCC</Link>
         </div>
-
         <a
           className="pointer"
           onClick={() =>
             handleExternalLinkClick("https://linktr.ee/WilliamOliveiraSilva")
           }
         >
-          {" "}
           <FaRegUser className="icone-user" />
         </a>
       </div>
