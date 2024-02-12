@@ -1741,12 +1741,13 @@
   }
   .skill-containers-2 {
     width: 90%;
-    height: 100%;
+    height: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3vw;
     z-index: 2;
+    position: relative;
   }
 
   .skill-containers-3 {
@@ -1764,7 +1765,7 @@
   }
   .skill-container {
     width: 100%;
-    height: 48vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -1790,7 +1791,7 @@
 
   .skill-containers-2 .text-skill {
     width: 100%;
-    height: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -1807,7 +1808,7 @@
 
   .skill-container p {
     color: #1b1c1ed0;
-    font-size: 0.87rem;
+    font-size: 3.3vw;
     font-family: "Gilroy-Medium", sans-serif;
     word-spacing: 0.2em;
     margin: 0;
