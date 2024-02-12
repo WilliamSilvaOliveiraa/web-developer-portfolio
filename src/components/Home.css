@@ -1183,7 +1183,7 @@
     word-spacing: 0.2em;
     margin: 0;
     width: 100%;
-    height: 15vw;
+
     line-height: 1.3; /* Ajuste o valor conforme necessário */
   }
 
@@ -1495,7 +1495,7 @@
     align-items: center;
     z-index: 2;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .text-img p {
@@ -1575,7 +1575,7 @@
   .project-container img {
     width: 100%;
     height: auto;
-    margin-bottom: 0.8vw;
+    margin-bottom: 2vw;
     border-radius: 5px;
     z-index: 2;
   }
@@ -1771,7 +1771,7 @@
     justify-content: space-between;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 2% 1.5% 2% 1.5%;
-    gap: 4vw;
+
     border-radius: 10px;
     z-index: 100;
     position: relative;
@@ -1811,14 +1811,13 @@
     font-family: "Gilroy-Medium", sans-serif;
     word-spacing: 0.2em;
     margin: 0;
-
-    height: 100%;
+    height: auto;
     line-height: 1.3; /* Ajuste o valor conforme necessário */
   }
 
   .skill-img {
     width: 100%;
-    height: 150px;
+    height: 50%;
     border-radius: 5 px;
     overflow: hidden;
     border-top-right-radius: 10px;
@@ -1992,7 +1991,6 @@
     flex-direction: column;
     gap: 3vw;
   }
-
 
   .navbar-responsive .links {
     flex-direction: column;

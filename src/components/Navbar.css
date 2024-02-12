@@ -131,7 +131,7 @@ code {
     align-items: center;
     justify-content: center;
     flex-direction: column-reverse;
-    gap: 1rem;
+    gap: 2rem;
     background: #f3f3ff;
     transition: 1s ease;
     transform: translateY(-100vh);
@@ -205,10 +205,14 @@ code {
     font-size: 1.5rem;
     text-decoration: none;
     font-family: "Gilroy-Medium", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     position: relative;
     height: 12%;
     text-align: center;
     align-items: center;
+  }
+
+  .link:hover::after {
+    width: 0;
   }
 }
