@@ -167,6 +167,10 @@
   gap: 2vw;
 }
 
+.rect2 {
+  display: none;
+}
+
 .link-social a {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -1223,7 +1227,7 @@
 
   .skill-containers-2 .text-skill {
     width: 100%;
-    height: 100%;
+    height: 19vw;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -1741,7 +1745,7 @@
   }
   .skill-containers-2 {
     width: 90%;
-    height: 100vw;
+    height: 110vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1771,8 +1775,8 @@
     align-items: start;
     justify-content: space-between;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 2% 1.5% 2% 1.5%;
-
+    padding: 2% 2% 2% 2%;
+    gap: 2vw;
     border-radius: 10px;
     z-index: 100;
     position: relative;
@@ -1784,19 +1788,19 @@
     height: 13vw;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     gap: 1vw;
   }
 
   .skill-containers-2 .text-skill {
     width: 100%;
-
+    height: 60%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    gap: 1vw;
+    gap: 3vw;
   }
   .skill-container h2 {
     color: #1b1c1e;
@@ -1804,6 +1808,7 @@
     font-family: "Gilroy-Medium", sans-serif;
     word-spacing: 0.2em;
     margin: 0;
+    text-align: center;
   }
 
   .skill-container p {
@@ -1818,7 +1823,7 @@
 
   .skill-img {
     width: 100%;
-    height: 50%;
+    height: 30vw;
     border-radius: 5 px;
     overflow: hidden;
     border-radius: 10px;
@@ -1839,7 +1844,7 @@
     height: 10vw;
     justify-content: center;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
   }
   .desativar-p {
     display: none;
@@ -2027,5 +2032,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .rect {
+    display: none;
+  }
+
+  .rect2 {
+    display: block;
+  }
+  .certificate-big {
+    width: 100%;
+  }
+
+  #align-left {
+    text-align: start;
   }
 }

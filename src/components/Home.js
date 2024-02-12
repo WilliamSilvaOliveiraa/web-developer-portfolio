@@ -18,7 +18,9 @@ import { FaHtml5 } from "react-icons/fa";
 import Perfil from "../imgs/Perfil.jpg";
 import siteFoto from "../imgs/modelo.png";
 import etec from "../imgs/etec.jpg";
+import etec2 from "../imgs/etec2.png";
 import react from "../imgs/react.png";
+import react2 from "../imgs/react2.png";
 import php from "../imgs/php.png";
 import bradesco from "../imgs/bradesco.png";
 import eurogrillp from "../imgs/eurogrill-p.png";
@@ -271,10 +273,11 @@ function Home() {
           <div className="skill-containers-2">
             <div className="skill-container">
               <div className="skill-img">
-                <img src={etec}></img>
+                <img className="rect" src={etec}></img>
+                <img className="rect2" src={etec2}></img>
               </div>
               <div className="text-skill">
-                <h2>Desenvolvimento de Sistemas</h2>
+                <h2 id="align-left">Desenvolvimento de Sistemas</h2>
                 <p>
                   Formado em Técnico em Desenvolvimentos de Sistemas<br></br>
                   <b>
@@ -289,17 +292,18 @@ function Home() {
               <a
                 href="https://drive.google.com/file/d/1d_b6NyzO_jL34XAb43gDAeOHFDruIjnS/view?usp=sharing"
                 target="_blank"
-                className="certificate not"
+                className="certificate not certificate-big"
               >
                 Certificado <FaAngleDoubleRight />
               </a>
             </div>
             <div className="skill-container">
               <div className="skill-img">
-                <img src={react}></img>
+                <img className="rect" src={react}></img>
+                <img className="rect2" src={react2}></img>
               </div>
               <div className="text-skill">
-                <h2>Curso React + Redux Completo</h2>
+                <h2 id="align-left">Curso React + Redux Completo</h2>
                 <p>
                   Conclusão de Curso React + Redux<br></br>
                   <b>Onde</b>: Udemy<br></br>
@@ -311,7 +315,7 @@ function Home() {
               <a
                 href="https://drive.google.com/file/d/17xfuwuKK3z1R4p00hyExgKkgBTEWaII1/view?usp=sharing"
                 target="_blank"
-                className="certificate not"
+                className="certificate not certificate-big"
               >
                 Certificado <FaAngleDoubleRight />
               </a>
@@ -336,7 +340,7 @@ function Home() {
               <a
                 href="https://drive.google.com/file/d/183DsT9fZG8HwE5oa7WYp05HiGhcuem7W/view?usp=sharing"
                 target="_blank"
-                className="certificate not"
+                className="certificate not "
               >
                 Certificado <FaAngleDoubleRight />
               </a>
@@ -356,7 +360,7 @@ function Home() {
               <a
                 href="https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateDialog.aspx?AFeaPo%2buSXJjQ4dhIhPPcbL74xYk%2fnS3"
                 target="_blank"
-                className="certificate not"
+                className="certificate not "
               >
                 Certificado <FaAngleDoubleRight />
               </a>
