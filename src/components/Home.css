@@ -1535,6 +1535,7 @@
     height: 100%;
     margin: 0;
     padding: 0;
+    padding-top: 7rem;
     gap: 3rem;
     align-items: center;
     position: relative;
@@ -1960,14 +1961,6 @@
     cursor: pointer;
   }
 
-  .text-not {
-    text-decoration: none;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .white {
     transition: color 0.3s ease;
     color: white;
@@ -2000,13 +1993,6 @@
     gap: 3vw;
   }
 
-  .navbar-responsive .pointer {
-    display: none;
-  }
-
-  .navbar-responsive .text-not {
-    display: none;
-  }
 
   .navbar-responsive .links {
     flex-direction: column;
@@ -2041,13 +2027,6 @@
     background: gainsboro;
     z-index: 1000;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .pointer {
-    cursor: pointer;
-    width: 100%;
-    display: flex;
     align-items: center;
     justify-content: center;
   }

@@ -35,7 +35,7 @@ nav .link {
   display: flex;
   color: #1b1c1e;
   margin: 0 2vw;
-  font-size: 1vw;
+  font-size: 0.875rem;
   text-decoration: none;
   font-family: "Gilroy-Medium", sans-serif;
   position: relative;
@@ -85,7 +85,7 @@ header .nav-btn {
 code {
   position: relative;
   z-index: 2;
-  font-size: 2.2vw;
+  font-size: 1.8rem;
   background-clip: text;
   color: transparent;
   text-decoration: none;
@@ -112,6 +112,7 @@ code {
     visibility: visible;
     opacity: 1;
     display: block;
+    width: 100%;
   }
 
   header nav {
@@ -133,15 +134,73 @@ code {
 
   header .responsive-nav {
     transform: none;
+    padding: 8rem 0;
   }
 
   nav .nav-close-btn {
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   nav a {
     font-size: 1.5rem;
+  }
+
+  .pointer {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-not {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icone-user {
+    align-items: end;
+    color: #1b1c1e;
+    font-size: 1.8rem;
+    width: 100%;
+  }
+  code {
+    position: relative;
+    z-index: 2;
+    font-size: 1.8rem;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    background-image: radial-gradient(
+      circle,
+      #fb0b89,
+      #f5006d,
+      #eb0053,
+      #de0039,
+      #cf0c20
+    );
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+
+  header {
+    padding: 0 2vw;
+  }
+  nav .link {
+    display: flex;
+    color: #1b1c1e;
+    margin: 0 2vw;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: "Gilroy-Medium", sans-serif;
+    position: relative;
+    height: 100%;
+    text-align: center;
+    align-items: center;
   }
 }
