@@ -1,17 +1,25 @@
 import { Link } from "react-router-dom";
 import { FaTimes, FaBars, FaRegUser } from "react-icons/fa";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "./Navbar.css";
-
 function Navbar() {
   const handleExternalLinkClick = (url) => {
     window.open(url, "_blank");
   };
+
+  const [isNavVisible, setIsNavVisible] = useState(false);
   const navRef = useRef();
 
   const showNavbar = () => {
-    navRef.current.classList.toggle("responsive-nav");
+    setIsNavVisible(!isNavVisible);
   };
+
+  // Adiciona ou remove a classe 'no-scroll' no corpo da página
+  if (isNavVisible) {
+    document.body.classList.add("no-scroll");
+  } else {
+    document.body.classList.remove("no-scroll");
+  }
 
   return (
     <header>
@@ -20,7 +28,7 @@ function Navbar() {
           <code>{"<Silva />"}</code>
         </h1>
       </Link>
-      <nav ref={navRef}>
+      <nav ref={navRef} className={isNavVisible ? "responsive-nav" : ""}>
         <Link className="link" to="/eurogrill">
           EuroGrill Ecommerce
         </Link>

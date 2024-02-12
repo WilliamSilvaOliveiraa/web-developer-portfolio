@@ -15,6 +15,11 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Adicione isso ao seu arquivo de estilo (Navbar.css) */
+.no-scroll {
+  overflow: hidden;
+}
+
 header {
   display: flex;
   align-items: center;
