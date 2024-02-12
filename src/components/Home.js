@@ -1,4 +1,4 @@
-import "../components/App.css";
+import "../components/Home.css";
 import { FaRegUser } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -31,7 +31,7 @@ import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import Navbar from "./Navbar";
 
-function App() {
+function Home() {
   const [navbarClass, setNavbarClass] = useState("navbar");
   const [menuIconVisible, setMenuIconVisible] = useState(true);
 
@@ -487,4 +487,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
