@@ -12,6 +12,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Gilroy-Regular", sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 header {
@@ -167,8 +168,8 @@ code {
     align-items: end;
     color: #1b1c1e;
     font-size: 1.8rem;
-    width: 100%;
   }
+
   code {
     position: relative;
     z-index: 2;
@@ -189,7 +190,7 @@ code {
   }
 
   header {
-    padding: 0 2vw;
+    padding: 0 5vw;
   }
   nav .link {
     display: flex;
