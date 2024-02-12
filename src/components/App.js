@@ -52,33 +52,6 @@ function App() {
 
   return (
     <div class="main">
-      <div className={navbarClass}>
-        <Link to="/" className="text-not">
-          <h1 className="">
-            <code>{"<Silva />"}</code>
-          </h1>
-        </Link>
-        {menuIconVisible && (
-          <IoMenu className="icone-nav" onClick={toggleNavbar} />
-        )}
-        {!menuIconVisible && (
-          <IoClose className="icone-nav-responsive" onClick={toggleNavbar} />
-        )}
-        <div className="links">
-          <Link to="/eurogrill"> EuroGrill Ecommerce</Link>
-          <Link to="/authenticator"> Themed Authenticator</Link>
-          <Link to="/currency"> Currency Converter</Link>
-          <Link to="/argus"> Argus TCC</Link>
-        </div>
-        <a
-          className="pointer"
-          onClick={() =>
-            handleExternalLinkClick("https://linktr.ee/WilliamOliveiraSilva")
-          }
-        >
-          <FaRegUser className="icone-user" />
-        </a>
-      </div>
       <div className="title">
         <h2>Seu próximo desenvolvedor</h2>
         <h1>Fullstack ;)</h1>
