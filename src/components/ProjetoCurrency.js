@@ -37,30 +37,6 @@ function ProjetoCurrency() {
 
   return (
     <div class="projeto-main">
-      <div className="navbar">
-        <Link to="/" className="text-not">
-          {" "}
-          <h1 className="">
-            <code>{"<Silva />"}</code>
-          </h1>
-        </Link>
-
-        <div className="links">
-          <Link to="/eurogrill"> EuroGrill Ecommerce</Link>
-          <Link to="/authenticator"> Themed Authenticator</Link>
-          <Link to="/currency"> Currency Converter</Link>
-          <Link to="/argus"> Argus</Link>
-        </div>
-        <a
-          className="pointer"
-          onClick={() =>
-            handleExternalLinkClick("https://linktr.ee/WilliamOliveiraSilva")
-          }
-        >
-          {" "}
-          <FaRegUser className="icone-user" />
-        </a>
-      </div>
       <div className="project-page">
         <div className="project-top">
           <div className="project-logo">

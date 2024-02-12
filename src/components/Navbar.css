@@ -19,19 +19,47 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  padding: 0 2rem;
+  padding: 0 10vw;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+nav {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav .link {
-  color: saddlebrown;
-  margin: 0 2rem;
+  display: flex;
+  color: #1b1c1e;
+  margin: 0 2vw;
+  font-size: 1vw;
   text-decoration: none;
+  font-family: "Gilroy-Medium", sans-serif;
+  position: relative;
+  height: 100%;
+  text-align: center;
+  align-items: center;
 }
 
-nav .link:hover {
-  color: skyblue;
+.link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: #1b1c1e;
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Alterado para iniciar do centro */
+  transform: translateX(-50%); /* Adicionado para centralizar o sublinhado */
+  transition: width 0.4s ease;
 }
 
+.link:hover::after {
+  width: 100%;
+}
 header .nav-btn {
   padding: 5px;
   cursor: pointer;
@@ -39,15 +67,51 @@ header .nav-btn {
   border: none;
   outline: none;
   visibility: hidden;
+  display: none;
   color: black;
   opacity: 0;
   font-size: 1.8rem;
+}
+.text-not {
+  text-decoration: none;
+}
+
+.text-not h1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+code {
+  position: relative;
+  z-index: 2;
+  font-size: 2.2vw;
+  background-clip: text;
+  color: transparent;
+  text-decoration: none;
+  background-image: radial-gradient(
+    circle,
+    #fb0b89,
+    #f5006d,
+    #eb0053,
+    #de0039,
+    #cf0c20
+  );
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.icone-user {
+  align-items: end;
+  color: #1b1c1e;
+  font-size: 1.5vw;
 }
 
 @media only screen and (max-width: 1024px) {
   header .nav-btn {
     visibility: visible;
     opacity: 1;
+    display: block;
   }
 
   header nav {
@@ -62,7 +126,7 @@ header .nav-btn {
     flex-direction: column;
     gap: 1rem;
     background: gray;
-    transition: 1s;
+    transition: 1s ease;
     transform: translateY(-100vh);
     z-index: 100;
   }
