@@ -253,7 +253,7 @@ function Home() {
                 C++<br></br>
                 Bootstrap<br></br>
                 Git / Github<br></br>
-                User Experience (UX)<br></br>
+                User Experience<br></br>
                 Figma<br></br>
                 Photoshop<br></br>
               </h2>

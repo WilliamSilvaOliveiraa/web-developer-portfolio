@@ -1722,7 +1722,7 @@
     width: 100%;
     height: 100%;
     gap: 10vw;
-    flex-direction: column;
+    flex-direction: row;
     margin-bottom: 5rem;
   }
   .skill-right .skill-info h2 {
