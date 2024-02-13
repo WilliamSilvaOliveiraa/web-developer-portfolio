@@ -37,6 +37,10 @@ nav {
   justify-content: center;
 }
 
+.pointer:hover .icone-user {
+  transform: scale(1.05);
+}
+
 nav .link {
   display: flex;
   color: #1b1c1e;
@@ -91,7 +95,7 @@ header .nav-btn {
 code {
   position: relative;
   z-index: 2;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   background-clip: text;
   color: transparent;
   text-decoration: none;
@@ -105,12 +109,18 @@ code {
   );
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  transition: 0.3s ease;
+}
+
+code:hover {
+  transform: scale(1.05);
 }
 
 .icone-user {
   align-items: end;
   color: #1b1c1e;
   font-size: 1.5vw;
+  transition: 0.3s ease;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -135,7 +145,7 @@ code {
     background: #f3f3ff;
     transition: 1s ease;
     transform: translateY(-100vh);
-    z-index: 100;
+    z-index: 1000;
   }
 
   header .responsive-nav {
@@ -148,7 +158,7 @@ code {
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 12vw;
+    font-size: 2.1rem;
   }
 
   nav a {
@@ -173,13 +183,13 @@ code {
   .icone-user {
     align-items: end;
     color: #1b1c1e;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   code {
     position: relative;
     z-index: 2;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     background-clip: text;
     color: transparent;
     text-decoration: none;
