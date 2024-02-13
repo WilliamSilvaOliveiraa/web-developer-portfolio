@@ -67,7 +67,7 @@ function Home() {
             <FaGithub />
             GitHub
           </a>
-          <a href="https://www.linkedin.com/in/william-oliver-6a981b22a/">
+          <a href="https://www.linkedin.com/in/william-silva-6a981b22a/">
             <FaLinkedin />
             Linkedin
           </a>
