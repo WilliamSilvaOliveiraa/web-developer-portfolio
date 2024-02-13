@@ -84,7 +84,7 @@ header .nav-btn {
   display: none;
   color: black;
   opacity: 0;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .text-not {
   text-decoration: none;
@@ -131,9 +131,11 @@ code:hover {
   header .nav-btn {
     visibility: visible;
     opacity: 1;
-    display: block;
+    display: flex;
     width: 100%;
     padding: 0;
+    align-items: center;
+    justify-content: center;
   }
 
   header nav {
@@ -202,7 +204,7 @@ code:hover {
   code {
     position: relative;
     z-index: 2;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     background-clip: text;
     color: transparent;
     text-decoration: none;
