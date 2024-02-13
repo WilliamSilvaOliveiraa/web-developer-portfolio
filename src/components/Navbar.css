@@ -20,6 +20,10 @@
   overflow: hidden;
 }
 
+#not-visib {
+  display: none;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -129,6 +133,7 @@ code:hover {
     opacity: 1;
     display: block;
     width: 100%;
+    padding: 0;
   }
 
   header nav {
@@ -165,6 +170,14 @@ code:hover {
     font-size: 1.5rem;
   }
 
+  #visib {
+    display: none;
+  }
+
+  #not-visib {
+    display: flex;
+  }
+
   .pointer {
     cursor: pointer;
     width: 100%;
@@ -183,13 +196,13 @@ code:hover {
   .icone-user {
     align-items: end;
     color: #1b1c1e;
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 
   code {
     position: relative;
     z-index: 2;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     background-clip: text;
     color: transparent;
     text-decoration: none;

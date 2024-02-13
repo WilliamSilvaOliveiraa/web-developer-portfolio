@@ -34,6 +34,15 @@ function Navbar() {
         </h1>
       </Link>
       <nav ref={navRef} className={isNavVisible ? "responsive-nav" : ""}>
+        <a
+          className="pointer "
+          id="not-visib"
+          onClick={() =>
+            handleExternalLinkClick("https://linktr.ee/WilliamOliveiraSilva")
+          }
+        >
+          <FaRegUser className="icone-user" />
+        </a>
         <Link className="link" to="/eurogrill" onClick={closeNavOnLinkClick}>
           EuroGrill Ecommerce
         </Link>
@@ -58,12 +67,12 @@ function Navbar() {
         <FaBars />
       </button>
       <a
-        className="pointer"
+        className="pointer "
+        id="visib"
         onClick={() =>
           handleExternalLinkClick("https://linktr.ee/WilliamOliveiraSilva")
         }
       >
-        {" "}
         <FaRegUser className="icone-user" />
       </a>
     </header>
