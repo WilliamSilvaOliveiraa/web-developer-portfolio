@@ -41,7 +41,7 @@ function ProjetoAuth() {
       <div className="project-page">
         <div className="project-top">
           <div className="project-logo ">
-            <img src={auth}></img>
+            <img id="auth" src={auth}></img>
             <h2
               className="diminuir
             "
