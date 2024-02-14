@@ -404,7 +404,7 @@ function Home() {
             <div className="contact-content center">55 19982249290</div>{" "}
           </div>
           <a
-            href="https://www.linkedin.com/in/william-oliver-6a981b22a/"
+            href="https://www.linkedin.com/in/william-silva-6a981b22a/"
             target="_blank"
             className="contact-type"
           >
