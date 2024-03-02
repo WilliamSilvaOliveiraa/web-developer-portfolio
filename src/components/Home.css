@@ -1650,9 +1650,9 @@
   .btn-show {
     border: 1px solid #4d4d53;
     padding: 5% 1.5%;
-    width: 50%;
+    width: 60%;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 3vw;
     cursor: pointer;
     border-radius: 10px;
     color: #4d4d53;
