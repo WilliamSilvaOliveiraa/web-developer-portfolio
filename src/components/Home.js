@@ -16,7 +16,7 @@ import { SiAdobephotoshop } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
 
 import Perfil from "../imgs/Perfil.jpg";
-import siteFoto from "../imgs/modelo.png";
+import siteFoto from "../imgs/landingpage-p.jpg";
 import etec from "../imgs/etec.jpg";
 import etec2 from "../imgs/etec2.png";
 import react from "../imgs/react.png";
@@ -117,17 +117,17 @@ function Home() {
               <div className="btn-show">Ver Mais</div>
             </div>
           </Link>
-          <Link to="/authenticator" className="project-container text-not">
+          <Link to="/template" className="project-container text-not">
             <div className="circle4"></div>
             <div className="circle5"></div>
             <div className="circle6"></div>
             <div className="circle7"></div>
-            <img src={authenticator}></img>
-            <h2>Authenticator</h2>
-            <p>Autenticador com Temas </p>
+            <img src={siteFoto}></img>
+            <h2>Template</h2>
+            <p>Simples Landing Page Completa</p>
             <div className="card-footer">
               <div className="tec-icons">
-                <IoLogoVue />
+                <FaReact />
                 <FaNode />
                 <SiAdobeillustrator />
               </div>
@@ -171,19 +171,26 @@ function Home() {
               <div className="btn-show">Ver Mais</div>
             </div>
           </Link>
-          <div className="project-container desativar">
+          <Link
+            to="/authenticator"
+            className="project-container desativar text-not"
+          >
             <div className="circle4"></div>
             <div className="circle5"></div>
             <div className="circle6"></div>
             <div className="circle7"></div>
-            <img src={siteFoto}></img>
-            <h2>Empty</h2>
-            <p>‎ ‎ </p>
+            <img src={authenticator}></img>
+            <h2>Authenticator</h2>
+            <p>Autenticador com Temas </p>
             <div className="card-footer">
-              <div className="tec-icons"></div>
-              <div className="btn-show">Vazio</div>
+              <div className="tec-icons">
+                <IoLogoVue />
+                <FaNode />
+                <SiAdobeillustrator />
+              </div>
+              <div className="btn-show">Ver Mais</div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
       <div className="skills">

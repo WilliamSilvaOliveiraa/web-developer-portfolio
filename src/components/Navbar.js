@@ -46,6 +46,9 @@ function Navbar() {
         <Link className="link" to="/eurogrill" onClick={closeNavOnLinkClick}>
           EuroGrill Ecommerce
         </Link>
+        <Link className="link" to="/template" onClick={closeNavOnLinkClick}>
+          Landing Page
+        </Link>
         <Link
           className="link"
           to="/authenticator"

@@ -7,6 +7,7 @@ import ProjetoArgus from "./components/ProjetoArgus";
 import ProjetoAuth from "./components/ProjetoAuth";
 import ProjetoCurrency from "./components/ProjetoCurrency";
 import Home from "./components/Home";
+import ProjetoTemplate from "./components/ProjetoTemplate";
 import Navbar from "./components/Navbar";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -23,6 +24,7 @@ root.render(
         <Route path="/argus" element={<ProjetoArgus />}></Route>
         <Route path="/authenticator" element={<ProjetoAuth />}></Route>
         <Route path="/currency" element={<ProjetoCurrency />}></Route>
+        <Route path="/template" element={<ProjetoTemplate />}></Route>
       </Routes>
     </Router>
   </React.StrictMode>
