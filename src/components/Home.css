@@ -315,7 +315,7 @@
   justify-content: center;
   background: #f3f3ff;
   padding: 8px;
-  border-radius: 10px;
+  border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 8px;
   transition: transform 0.5s ease;
   cursor: pointer;
@@ -329,7 +329,7 @@
   width: 100%;
   height: auto;
   margin-bottom: 0.8vw;
-  border-radius: 5px;
+  border-radius: 2px;
   z-index: 2;
 }
 
@@ -1564,7 +1564,7 @@
     justify-content: space-between;
     background: #f3f3ff;
     padding: 8px;
-    border-radius: 10px;
+    border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 8px;
     transition: transform 0.5s ease;
     cursor: pointer;
@@ -1579,7 +1579,7 @@
     width: 100%;
     height: auto;
     margin-bottom: 2vw;
-    border-radius: 5px;
+    border-radius: 2px;
     z-index: 2;
   }
 
